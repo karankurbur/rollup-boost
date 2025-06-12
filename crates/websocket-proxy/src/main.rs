@@ -238,6 +238,7 @@ async fn main() {
     let token = CancellationToken::new();
     let mut subscriber_tasks = Vec::new();
 
+    
     // Start a subscriber for each upstream URI
     for (index, uri) in args.upstream_ws.iter().enumerate() {
         let uri_clone = uri.clone();
